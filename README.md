@@ -4,4 +4,5 @@ Common build dependencies used for Linux kernels.
 
 ## Tags
 
-- [buster](buster/Dockerfile)
+- [jessie (Debian 8)](jessie/Dockerfile)
+- [buster (Debian 10)](buster/Dockerfile)
