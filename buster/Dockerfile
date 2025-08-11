@@ -1,7 +1,8 @@
 ARG DEBIAN_VERSION=buster
 FROM debian:${DEBIAN_VERSION}-slim
 
-RUN apt-get update && \
+RUN echo 'deb http://archive.debian.org/debian buster main' >/etc/apt/sources.list && \
+  apt-get update && \
   apt-get install -y --no-install-recommends \
   bc \
   bison \
